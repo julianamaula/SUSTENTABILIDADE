@@ -1,23 +1,10 @@
 {
-  "name": "sustentavel",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/julianamaula/SUSTENTABILIDADE.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/julianamaula/SUSTENTABILIDADE/issues"
-  },
-  "homepage": "https://github.com/julianamaula/SUSTENTABILIDADE#readme"
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1",
+    "popper.js": "^1.16.1"
+  }
 }
 "scripts": {
   "build": "npm run compile-css && npm run compile-js",
