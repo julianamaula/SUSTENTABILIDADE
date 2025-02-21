@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="Sustentavel" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+    <link rel="stylesheet" href="scss/style.scss">
+    <link rel="stylesheet" href="css/styles-4.css">  
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    </head>
+    <body>
+       
+    <title>Sustentável</title>
+      
+<nav class="navbar navbar-expand-lg navbar-dark bg-gradient-primary">
+    <div class="container">
+    
+    <a class="navbar-brand h1 mb-0" href="Index.html"><i class="fa fa-home" aria-hidden="true"></i>HOME</a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+     <span class="navbar-toggler-icon"></span>
+    </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSite">
+            
+    <ul class="navbar-nav mr-auto">
+        
+      <li class="nav-item">
+        <a class="nav-link" href="./ENERGIA%20RENOV%C3%81VEL.html"><strong>ENERGIA RENOVÁVEL</strong></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./MEIO%20AMBIENTE.html"><strong>MEIO AMBIENTE</strong></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./ATITUDE.html"><strong>ATITUDE</strong></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./CADASTRO.html"><strong>CADASTRO</strong></a>
+    </li>
+             </ul>
+            
+            <ul class="navbar-nav ml-auto">
+           
+         <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Social
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <a class="dropdown-item" href="https://www.linkedin.com/in/juliana-de-maula" style="color: #0077b5;">LinkedIn</a>
+    <a class="dropdown-item" href="https://github.com/julianamaula" style="color: #333;">Github</a>
+    <a class="dropdown-item" href="https://cursos.alura.com.br/user/julianademaula" style="color: #007bff;">Alura</a>
+    <a class="dropdown-item" href="https://www.dio.me/en/users/jdemaula" style="color: #00c853;">Dio.me</a>
+</div>
+                </div>
+            </ul>
+            <form class="form-inline" action="#">
+              <input class="form-control ml-4 mr-2" type="search" placeholder="Buscar..." list="search-items" id="search-input">
+              <datalist id="search-items">
+                  <option value="APRENDIZADO" data-target="#item1">
+                  <option value="SUSTENTABILIDADE" data-target="#item2">
+                  <option value="Consumo Consciente" data-target="#item2-1"></option>
+                  <option value="Plástico um perigo de grande proporções" data-target="#item2-2"></option>
+                  <option value="AÇÕES QUE PODEM AJUDAR" data-target="#item3"></option>
+                  <option value="Vantagens ambientais" data-target="#item3-1">
+                  <option value="Vantagens Econômicas e Sociais" data-target="#item3-2"></option>
+              </datalist>
+              <button class="btn btn-success" type="button" onclick="searchContent()">ok</button>
+          </form>
+          <script>
+            function searchContent() {
+                const searchInput = document.getElementById('search-input').value;
+                const options = document.querySelectorAll('#search-items option');
+                options.forEach(option => {
+                    if (option.value === searchInput) {
+                        const target = option.getAttribute('data-target');
+                        if (target) {
+                            document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }
+                });
+            }
+        </script>
+    </div>
+</div>
+  </nav>
+      <br><br>
+        
+        
+         <div class="container  bg-gradient-success"  style="color: black">
+             
+         <div class="row justify-center" >
+             
+          <div class="col-12 text-center my-5">
+              
+              <h2 class="display-6"><i class="fa fa-paper-plane text-primary" aria-hidden="true"></i><strong>FORMULÁRIO</strong></h2>
+             
+             </div>
+          
+          
+          </div> 
+             
+          <div class="row justify-content-center mb-5 ">
+              
+          <div class="col-sm-12 col-md-10 col-lg-8">
+              
+              <form>
+                  
+                <div class="form-row">
+                    
+                    <div class="form-group col-sm-6">
+                
+                  <label for="inputNome">Seu nome</label>
+                        <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+                  
+                  
+                  
+                  </div>
+                    
+                    
+                    <div class="form-group col-sm-6">
+                    
+                    <label for="inputSobrenome">Seu sobrenome</label>
+                        <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
+                        
+                    </div>
+                    
+                  </div>
+                    
+               <div class="form-row">
+                   
+              <div class="form-group col-sm-12">
+                  
+                    <label for="inputEnd">Seu endereço</label>
+                  
+                  <input type="text" class="form-control" id="inputEnd" placeholder="Endereço completo">
+                  
+                  </div>
+                   
+                    </div>
+                  
+                        <div class="form-row">
+                            
+                    <div class="form-group col-sm-6">
+                        
+                    <label for="inputCidade">Sua cidade</label>
+                        
+                    <input type="text" class="form-control" id="inputCidade" placeholder="Cidade">
+                    
+                    
+                    </div>
+                
+                    
+                    <div class="form-group col-sm-4">
+                        
+                    <label for="inputEst">Seu estado</label>
+                        <select id="InputEst" class="form-control">
+                        <option selected>Estado</option>
+                        <option>São Paulo</option>    
+                        <option>Rio de Janeiro</option>    
+                        <option>Rio Grande do Norte</option>    
+                        <option>Santa Catarina</option>    
+                        <option>Sergipe</option>    
+                        
+                        </select>
+                    
+                    
+                    </div>
+                            
+                    <div class="form-group col-sm-2">
+                    <label for="inputCep">Seu cep</label>
+                        <input type="text" id="inputCep" class="form-control">
+                    
+                    </div>
+                    
+                    
+                  </div>
+                  
+           <div class="form-row" >
+                    
+                    <div class="form-group col-sm-12" >
+                        
+                    <div class="form-check">
+                        
+                        <label class="for-check-label">
+                            
+                        <input class="for-check-input" type="checkbox"> Desejo receber novidades por e-mail
+                        
+                        </label>
+                        
+                        </div>
+                        
+                        </div>
+                    
+                  </div>
+                  
+                <div class="form-row" >  
+                    
+                    <div class="form-group col-sm-12">
+                  
+              <button type="submit" class="btn btn-primary"  style="color: black">Enviar</button>
+                        
+                        <a tabindex="0" class="btn btn-secondary ml-2" role="button" data-toggle="popover" data-placement="right" data-trigger="focus" title="E-mail cadastrado com sucesso" data-content="Parabéns por fazer parte dessa corrente do bem!!!" style="color: black">Confirme</a>
+                        
+                    </div>
+              </div>
+                  
+              </form>
+              
+              </div>
+          
+          </div>
+                     
+                     </div>
+      
+      
+     <div class="jumbotron jumbotron-fluid">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-12 text-center">
+                           <h1 class="display-5"><i class="fa fa-envira" aria-hidden="true"style='font-size:50px;color:cadetblue'></i><strong>CONTINUE LUTANDO POR ESSA CAUSA</strong></h1>
+                         <p class="lead"><strong>Venha fazer parte desse time</strong></p>
+                         <hr>
+                     
+                     </div>
+                 
+                 </div>
+                 
+             </div>
+         
+             <br>
+               <br>
+             <br>
+                <br>
+               <br>
+             <br>
+      
+         <div class="row mb-5 justify-content-center" style="margin-left: 50px;margin-right: 50px;">
+          
+     
+             
+             <div class="col-sm-4">
+             
+             <h3>Sustentável</h3>
+             
+            <p>Como todo site de sustentabilidade, o intuito é promover o conhecimento levando para cada leitor uma experiência única, fazendo com que as informações aqui fornecidas causem um efeito positivo não só em pensamentos a serem refletidos, mais sim em atitudes para serem colocada em práticas.</p>
+                 
+         </div>
+             
+                                      
+         <div class="col-sm-4">
+                                
+             <h3>Menu</h3>
+             
+            <div class="list-group text-center">
+                
+              <a href="./ENERGIA%20RENOV%C3%81VEL.html" class="list-group-item list-group-item-action list-group-item-success">Energia Renovável</a>
+              <a href="./MEIO%20AMBIENTE.html" class="list-group-item list-group-item-action list-group-item-info">Meio Ambiente</a>
+              <a href="./ATITUDE.html" class="list-group-item list-group-item-action list-group-item-warning">Atitude</a>
+              <a href="./CADASTRO.html" class="list-group-item list-group-item-action list-group-item-danger">Cadastro</a>
+             </div>
+             </div>
+             
+             <div class="col-sm-4">
+                 
+             <h3>Social</h3>
+             
+            <div class="btn-group-vertical btn-block btn-group-lg" role="group">
+             
+              <a class="btn btn-outline-primary" href="https://www.linkedin.com/in/juliana-de-maula"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+                <a class="btn btn-outline-dark" href="https://github.com/julianamaula"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+                <a class="btn btn-outline-info" href="https://cursos.alura.com.br/user/julianademaula"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Alura</a>
+                <a class="btn btn-outline-success" href="https://www.dio.me/en/users/jdemaula"><i class="fa fa-users" aria-hidden="true"></i> Dio.me</a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+             
+            </div>
+             
+          </div>
+          </div>
+               
+               <div class="col-mt-5">
+                 <br><br><br>
+             <blockquote class="blockquote text-center">
+                 
+             <p class="mb-0"><i class="fa fa-quote-left" aria-hidden="true"></i> A base de toda a sustentabilidade é o desenvolvimento humano que deve contemplar um melhor relacionamento do homem com os semelhantes e a natureza.<i class="fa fa-quote-right" aria-hidden="true"></i> </p> 
+                 <footer class="blockquote-footer"> Nagib Anderáos Neto <cite title="Source Titulo"> https://www.pensador.com/ </cite><br><br><br> Site Sustentabilidade Copyright © 2022 </footer>
+                 <footer class="blockquote-footer">Todos os direitos reservados. Juliana de Maula</footer>
+                 
+                 
+                 </blockquote>
+             
+             
+             </div>
+             
+             </div>
+
+
+      
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+       <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+        $(function(){
+            $('[data-toggle="popover"]').popover()
+            
+        })
+        
+        </script>
+    </body>
+</html>

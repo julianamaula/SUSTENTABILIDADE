@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="Sustentavel" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+    
+    <link rel="stylesheet" href="scss/style.scss">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+
+      
+    </head>
+    <body>
+        
+    <title>Sustentável</title>
+    
+      
+<nav class="navbar navbar-expand-lg navbar-dark bg-gradient-primary">
+    <div class="container">
+    
+    <a class="navbar-brand h1 mb-0" href="../site-2/Index.html"><i class="fa fa-home" aria-hidden="true"></i>HOME</a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+     <span class="navbar-toggler-icon"></span>
+    </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSite">
+            
+    <ul class="navbar-nav mr-auto">
+        
+        <li class="nav-item">
+            <a class="nav-link" href="./ENERGIA%20RENOV%C3%81VEL.html"><strong>ENERGIA RENOVÁVEL</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./MEIO%20AMBIENTE.html"><strong>MEIO AMBIENTE</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./ATITUDE.html"><strong>ATITUDE</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./CADASTRO.html"><strong>CADASTRO</strong></a>
+        </li>
+             </ul>
+            
+            <ul class="navbar-nav ml-auto">
+           
+         <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Social
+  </button>
+<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <a class="dropdown-item" href="https://www.linkedin.com/in/juliana-de-maula" style="color: #0077b5;">LinkedIn</a>
+    <a class="dropdown-item" href="https://github.com/julianamaula" style="color: #333;">Github</a>
+    <a class="dropdown-item" href="https://cursos.alura.com.br/user/julianademaula" style="color: #007bff;">Alura</a>
+    <a class="dropdown-item" href="https://www.dio.me/en/users/jdemaula" style="color: #00c853;">Dio.me</a>
+</div>
+                </div>
+            </ul>
+            <form class="form-inline" action="#">
+                <input class="form-control ml-4 mr-2" type="search" placeholder="Buscar..." list="search-items" id="search-input">
+                <datalist id="search-items">
+                    <option value="APRENDIZADO" data-target="#item1">
+                    <option value="SUSTENTABILIDADE" data-target="#item2">
+                    <option value="Consumo Consciente" data-target="#item2-1"></option>
+                    <option value="Plástico um perigo de grande proporções" data-target="#item2-2"></option>
+                    <option value="AÇÕES QUE PODEM AJUDAR" data-target="#item3"></option>
+                    <option value="Vantagens ambientais" data-target="#item3-1">
+                    <option value="Vantagens Econômicas e Sociais" data-target="#item3-2"></option>
+                </datalist>
+                <button class="btn btn-success" type="button" onclick="searchContent()">ok</button>
+            </form>
+
+            <script>
+                function searchContent() {
+                    const searchInput = document.getElementById('search-input').value;
+                    const options = document.querySelectorAll('#search-items option');
+                    options.forEach(option => {
+                        if (option.value === searchInput) {
+                            const target = option.getAttribute('data-target');
+                            if (target) {
+                                document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+                            }
+                        }
+                    });
+                }
+            </script>
+        </div>
+    </div>
+      </nav>
+      
+      <div id="carouselSlide" class="carousel slide" data-ride="carousel">
+          
+          <ol class="carousel-indicators">
+          <li data-target="#carouselSlide" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselSlide" data-slide-to="1"></li>
+          <li data-target="#carouselSlide" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+          <div class="carousel-item active">
+              
+              <img src="imgs/slide-1.jpg"width="100%" height="700px" class="img-fluid d-block">
+              
+              <div class="carousel-caption d-none d-md-block" style="color: #212529">
+              <h1>SEJA SUSTENTÁVEL</h1>
+                  <p class="lead" style="font-size: 30px"><strong> Abrace essa causa</strong></p>
+              
+              </div>
+              
+              </div>
+              <div class="carousel-item">
+              <img src="imgs/slide-2.jpg" width="100%" height="700px" class="img-fluid d-block">
+                   <div class="carousel-caption d-none d-md-block" style="color: #22d4f2">
+              <h1>UM MUNDO SUSTENTÁVEL</h1>
+                       <p class="lead"style="font-size: 30px"><strong> Lute por essa ideia </strong></p>
+              
+              </div>
+              
+              </div>
+              <div class="carousel-item">
+              <img src="imgs/slide-3.jpg" width="100%" height="700px" class="img-fluid d-block">
+                   <div class="carousel-caption d-none d-md-block" style="color: coral">
+              <h1>NATUREZA FELIZ</h1>
+                       <p class="lead"style="font-size: 30px"><strong> Qualidade de vida garantida </strong></p>
+              
+              </div>
+              </div>
+              
+              
+          </div>
+          <a class="carousel-control-prev" href="#carouselSlide" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselSlide" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+              <span class="sr-only"></span>
+          </a>
+      
+      </div>
+      
+      <div class="container">
+          
+          <div class="row">
+              
+          <div class="col-12 text-center my-5">
+              
+              <h1 class="display-3"><strong><i class='fa fa-tree' style='font-size:70px;color:cadetblue'></i> BEM-VINDO AO SITE <i class='fa fa-tree' style='font-size:70px;color:cadetblue'></i></strong></h1>
+              <p><strong>Conheça o objetivo do site</strong></p>
+              </div>
+          </div>
+    
+        
+      <div class="row my-5">
+          
+      <div class="col-sm-6 col-md-4 mb-3"> 
+          
+          <nav id="navbarVertical" class="navbar navbar-light bg-light">
+              
+             <nav class="nav nav-pills flex-column">
+              
+                 <a class="nav-link" href="#item1" style="color: #3CB371; font-weight: bold;">APRENDIZADO</a>
+              
+              
+                   <a class="nav-link my-2" href="#item2" style="color: #3CB371; font-weight: bold;">SUSTENTABILIDADE</a>
+              
+              <nav class="nav nav-pills flex-column">
+                  
+                   <a class="nav-link ml-3" href="#item2-1" style="color: #3CB371; font-weight: bold;">Consumo Consciente</a>
+                  
+                   <a class="nav-link ml-3" href="#item2-2" style="color: #3CB371; font-weight: bold;">Plástico um perigo de grande proporções</a>
+              
+              </nav>
+              
+                   <a class="nav-link my-2" href="#item3" style="color: #3CB371; font-weight: bold;">AÇÕES QUE PODEM AJUDAR</a>
+              
+             <nav class="nav nav-pills flex-column">
+                  
+                <a class="nav-link ml-3" href="#item3-1" style="color: #3CB371; font-weight: bold;">Vantagens ambientais</a>
+                  
+                  <a class="nav-link ml-3" href="#item3-2" style="color: #3CB371; font-weight: bold;">Vantagens Econômicas e Sociais</a>
+              
+              </nav>
+              </nav>
+          
+          </nav>
+          
+          </div>
+          
+          
+          <div  class="col-sm-6 col-md-8">
+            <div data-spy="scroll" data-target="#navbarVertical" data-offset="0" class="scrollspysite" >
+                
+              <h4 id="item1"><i class="fa fa-leanpub" aria-hidden="true" style='font-size:30px;color:cadetblue'></i> APRENDIZADO</h4>
+                <p>O site tem uma estrutura com tópicos informativos nutrido com assuntos pertinentes que nos fazem a refletir o quão é importante 
+                investir em conscientização e em tecnologia sustentável quando falamos de vida e futuro. E principalmente encontrando soluções para 
+                o fim do uso de plásticos, uns dos grandes vilões do meio ambiente e extremamente ameaçador a sobrevivência na terra.
+                Contudo isso, o site foi projetado em HTML/XHTML linguagem de marcação e CSS linguagem de formação de conteúdo com abertura para
+                implementação JavaScript linguagen de programção e todos os recursos disponibilizados seguindo as diretrizes dentro das documentações.
+                Com as propriedades adquiridas dentro do curso comecei dar os meus primeiros passos, colocando em prática todo aprendizado dentro do
+                curso de Ciência da Computação na disciplina Programação Web Responsiva (PWR), que se encontra dentro das grades curriculares do 
+                semestre na Universidade Paulista ano de 2022. </p>
+                
+              <h5 id="item2"><i class="fa fa-pagelines" aria-hidden="true"style='font-size:30px;color:cadetblue'></i> SUSTENTABILIDADE</h5>
+                <p>Afinal de contas, o que é Sustentabilidade e o que você tem a ver com isso? O conceito de Sustentabilidade é muito mais amplo do que
+                a maioria das pessoas imaginam, pode se dizer que tem vários caminhos para chegar no conceito sustentabilidade, ele não está relacionado
+                apenas ao meio ambiente, mas também a tudo que está nele e a sua volta, relacionando-se as pessoas, as empresas e negócios que dele dependem.<br> 
+                Literalmente, o dicionário nos diz que Sustentabilidade é a condição de ser sustentável e, desta forma sustentar alguma coisa, neste caso os
+                recursos naturais, sendo eles todos aqueles elementos da natureza necessários ao homem, sendo renováveis ou não.<br> 
+                Para que essas pessoas, empresas e lugares possam viver e se desenvolver em equilíbrio, utilizando recursos finitos (aqueles que têm fim, 
+                ou seja, que não são renováveis), surge à necessidade de assegurar um Desenvolvimento Sustentável, ou seja, garantir padrões de produção e 
+                de consumo que garantam a disponibilidade destes recursos a todos. </p>
+                
+             <h5 id="item2-1"><i class="fa fa-recycle" aria-hidden="true"style='font-size:30px;color:cadetblue'></i> Consumo Consciente</h5>
+                <p>E o que você tem a ver com tudo isso? Você tem hábitos sustentáveis? Pensa duas vezes antes de utilizar um copo descartável? 
+                    Economiza água? E a luz? Separa o seu lixo orgânico do reciclável? Bom, estes e todos os outros hábitos diários do ser humano 
+                    geram consequências, e sejam eles sustentavam ou não, afetará de alguma forma a qualidade do meio ambiente. </p>
+                
+                
+              <h4 id="item2-2"><i class="fa fa-lightbulb-o" aria-hidden="true"style='font-size:30px;color:cadetblue'></i> O uso do plástico um perigo 
+                de grande proporções</h4>
+                <p>Em algum momento você já se perguntou o que acontece com todo o plástico produzido no mundo, as implicações para a saúde humana, 
+                a saúde dos animais e o meio ambiente? Os produtos petroquímicos começaram a aparecer no nosso dia a dia há menos de 100 anos. 
+                Do combustível fóssil são feitos inúmeros luxos da vida moderna, desde embalagens, aparelhos do dia a dia e até roupas. 
+                Os petroquímicos e os metais pesados, porém, são extremamente tóxicos e a ingestão dessas substâncias pode causar doenças como câncer,
+                má formação dos órgãos sexuais, diabetes e problemas neurológicos.<br>
+                O uso do plástico descartável se tornou um dos maiores desafios para nosso meio ambiente e a mesma questão vem tirando o sono de muitos. 
+                O alerta é da Organização das Nações Unidas (ONU). Todos os anos, de 8 a 13 milhões de toneladas do material acabam nos oceanos, ameaçando
+                a vida marinha e a nossa sobrevivência, já pode se dizer que há mais plástico do que peixe nos oceanos se tornando uma triste realidade atualmente</p>
+                
+                
+              <h4 id="item3"><i class="fa fa-users" aria-hidden="true"style='font-size:30px;color:cadetblue'></i> AÇÕES QUE PODEM AJUDAR</h4>
+                <p>Primeiramente não podemos falar de ações sem falar do mais principal a conscientização.<br>
+                Baseando se 7 R’s do consumo sustentável - repensar, respeitar, responsabilizar-se, recusar, reduzir, reaproveitar e reciclar:
+                Repensar os hábitos de consumo; Respeitar o meio ambiente e respectivas legislações vigentes; Responsabilizar-se pelos impactos
+                ambientais gerados decorrentes de suas ações/atividades; Recusar produtos que causam impactos ambientais negativos; Reduzir o uso
+                e o desperdício de recursos naturais, como água e luz no processamento de seus produtos e, propomos, também, reduzir o uso de produtos 
+                de higiene e limpeza convencionais, que são altamente poluentes; Reciclar tudo o que for possível; Oitavo “R” Replicar esta ideia.</p>
+                
+               <h5 id="item3-1"><i class="fa fa-handshake-o" aria-hidden="true"style='font-size:30px;color:cadetblue'></i> Vantagens ambientais</h5>
+                <p>A principal vantagem é a emissão praticamente zero de gases de efeito estufa (GEE) e outros poluentes que contribuem para as mudanças
+                climáticas; Elas ajudam a reduzir doenças relacionadas à poluição, como exemplo, asma, pneumonia e outras doenças respiratórias;
+                Elas não precisam de grandes quantidades de água para operação; Reduzem a necessidade de indústrias extrativas na medida em que o uso 
+                de combustíveis fósseis é evitado; Não cria problemas de lixo difíceis de resolver, como o descarte de lixo nuclear ou escória; 
+                Podem reduzir a necessidade de projetos hidrelétricos em larga escala com os consequentes efeitos de inundações e erosão.</p>
+                
+             <h5 id="item3-2"><i class="fa fa-globe" aria-hidden="true" style='font-size:30px;color:cadetblue'></i> Vantagens Econômicas e Sociais</h5>
+                <p>Redução de tarifas nos serviços de eletricidade, água e gás; Geração de empregos diretos (trabalhadores da construção civil, desenvolvedores,
+                fabricantes de equipamentos, designers, instaladores, financiadores); Geração de empregos indiretos (na agricultura, através da expansão dos 
+                sistemas de irrigação, na pecuária e na avicultura, com a instalação de estábulos eletrificados, no comércio e serviços); Para os municípios,
+                a redução do custo dos serviços municipais de energia elétrica (iluminação pública, bombeamento de água e edifícios públicos).A possibilidade de levar eletricidade a comunidades remotas e de promover o desenvolvimento dessas comunidades. A energia renovável é uma das grandes apostas, e um dos projetos sustentáveis de empresas que fornecem energia elétrica, como a ENEL, a maior distribuidora de energia do país.
+                </p>
+                
+                
+              
+              </div>
+          
+          </div>
+      </div>
+      
+      <div class="row mb-5 justify-content-sn-center ">
+          
+          <div class="col-sm-6 col-md-4">
+        
+          <div class="card mb-5">
+              
+              <img class="card-img-top" src="./imgs/item-01.jpg">
+              <div class="card-body">
+                  <h4 class="card-title">Dicas</h4>
+                  <h6 class="card-subtitle mb-2 text-muted" >Cores da coleta seletiva</h6>
+                  <ul class="wp-block-gallery columns-1 is-cropped">
+                    <li>
+                      <strong> Azul-</strong>
+                  Cor para correto de despejo de papeis e papelão, como caixas e folhas de sulfite.
+                
+               <li>
+                      <strong> Branco -</strong>
+                  que recebe os itens de descarte de hospitais e outros locais na área da saúde.
+                  </li>
+               <li>
+                      <strong> Cinza-</strong>
+                  onde se deposita o lixo que não pode ser reciclado, já que não pode ser separado.
+                  </li>
+               <li>
+                      <strong> Laranja-</strong>
+                  para itens mais perigosos que precisam ser descartados, como pilhas e baterias.
+                    <li>
+                      <strong> Marrom-</strong>
+                 que é para o lixo orgânico, como restos de comida.
+                  </li>
+               <li>
+                      <strong> Preto-</strong>
+                  para o correto descarte de itens de madeira.
+                  </li>
+               <li>
+                      <strong>Roxo-</strong>
+                  Cor para correto de despejo de papeis e papelão, como caixas e folhas de sulfite.
+                  </li>
+               <li>
+                      <strong> Amarelo-</strong>
+                  cor dedicada ao despejo de objetos de Metal, como as latinhas de bebidas e outros produtos
+                  </li>
+        
+               <li>
+                      <strong> Verde-</strong>
+                  um dos mais conhecidos, onde podemos descartar os vidros que utilizamos para consumir alimentos e outros produtos.
+                  </li>
+               <li>
+                      <strong> Vermelho-</strong>
+                  que é para um dos materiais que mais precisam ser reciclados, pois poluem com grande facilidade, que é o plástico.
+              </li>
+             </ul>
+              </div>
+                  <ul class="list-group list-group-flsuh">
+                    <li class="list-group-item"><strong>O que é coleta seletiva e como funciona?</strong><br>
+                    Coleta seletiva é a coleta diferenciada de resíduos que foram previamente separados segundo
+                    a sua constituição ou composição,ou seja, resíduos com características similares são selecionados 
+                    pelo gerador (que pode ser o cidadão, uma empresa ou outra instituição) e disponibilizados para a
+                    coleta separadamente facilitando a reciclagem dos produtos descartados.</li>
+                    <li class="list-group-item"><strong>Qual é a importância da coleta seletiva?</strong><br>
+                    A coleta seletiva é uma alternativa que permite diminuir a quantidade de lixo produzido assim
+                    podendo fazer o reaproveitamento de diversos materiais já transformados, ajudando a preserva a natureza.
+                    A participação da sociedade é de extrema importância para desenvolvimento de projetos de Educação Ambiental.</li>
+                    <li class="list-group-item"><strong>Qual é a importância da coleta seletiva e das lixeiras coloridas?</strong><br>
+                    As lixeiras de coleta seletiva fazem toda a diferença para a reciclagem e sustentabilidade do nosso planeta.
+                    Com elas é possível selecionar os lixos de acordo com o seu material, o que facilita o seu descarte.</li>
+                  </ul>
+                  
+                    <div class="card-body text-center">
+                  <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal">Saiba mais</a>
+                  
+              </div>
+              <div class="card-footer text-muted">
+          Plástico o Vilão.com
+              </div>
+              </div>
+
+          </div>
+      
+      <div class="col-sm-6 col-md-4">
+        
+          <div class="card mb-5">
+              
+              <img class="card-img-top" src="./imgs/item-02.jpg">
+              <div class="card-body">
+                <h4 class="card-title">Dicas</h4>
+                <h6 class="card-subtitle mb-2 text-muted" > Energia Renováveis</h6>
+                  <p class="card-text">Energia renovável é aquela que vem de recursos naturais que são naturalmente reabastecidos, como sol,
+                  vento, chuva, marés e energia geotérmica.<br> É importante notar que nem todo recurso natural é renovável, por exemplo, 
+                  o urânio, carvão e petróleo são retirados da natureza, porém existem em quantidade limitada<br>
+                  <h6 class="card-subtitle mb-2 text-muted" >Quais são as energias não renováveis?</h6>
+                  <p>As fontes não renováveis são aquelas que se utilizam de recursos naturais que não se disponibilizam continuamente na natureza.<br>
+                  A energia não renovável é um tipo de energia esgotável, que pode se originar de combustíveis fósseis (petróleo, gás natural e carvão mineral)
+                  e urânio, utilizado na energia nuclear</p>
+              </div>
+                  <ul class="list-group list-group-flsuh">
+                    <li class="list-group-item"><strong> Porque a economia de energia é importante?</strong><br>
+                    Praticamente tudo ao nosso redor funciona com energia e a sua economia é importante tanto por
+                    motivos financeiros (evitar gastos excessivos e desnecessários) quanto por motivos ambientais,
+                    pois a geração de energia depende da exploração de recursos naturais, sendo muito danoso para
+                    o meio ambiente gerar tanta energia.</li>
+                    <li class="list-group-item"> <strong> O que a energia ajuda o meio ambiente?</strong><br>
+                    Com a constante necessidade de racionamento de água pela qual o Brasil tem passado, o consumo 
+                    consciente se torna uma ação indispensável.<br> Uma alternativa para diminuir o desperdício de
+                    água é mudar pequenas ações cotidianas em relação à energia elétrica, por exemplo, já que as 
+                    hidrelétricas são responsáveis pela maior parte da energia produzida no país.</li>
+                    <li class="list-group-item"> <strong>Por que devemos economizar energia?</strong><br>
+                    Praticamente tudo ao nosso redor funciona com energia e a sua economia é importante tanto por motivos 
+                    financeiros (evitar gastos excessivos e desnecessários).
+                    Quanto por motivos ambientais, pois a geração de energia depende da exploração de recursos naturais,
+                    sendo muito danoso para o meio ambiente gerar tanta energia da forma como fazemos hoje.<br>
+                    Por isso é preciso entender quanto se gasta com cada aparelho eletrônico e fazendo isso podemos 
+                    economizar na conta de energia no fim do mês.
+                    Para economizar o consumo, o consumidor precisa reduzir e tentar acabar com desperdícios, visando 
+                    sempre adquirir produtos de baixo consumo.</li>
+                  </ul>
+                  
+                    <div class="card-body text-center">
+                  <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal-1">Saiba mais</a>
+                  
+              </div>
+              <div class="card-footer text-muted">
+           Plástico o Vilão.com
+              </div>
+              </div>
+          </div>
+      
+      <div class="col-sm-6 col-md-4">
+        
+          <div class="card mb-5">
+              
+              <img class="card-img-top" src="./imgs/item-04.jpg">
+              <div class="card-body">
+                  <h4 class="card-title">Dicas</h4>
+                  <h6 class="card-subtitle mb-2 text-muted" >Diga não ao Plático</h6>
+                  <p class="card-text">Os plásticos são materiais formados pela união de grandes cadeias moleculares chamadas polímeros, 
+                  uma substância derivada do petróleo de alta massa molar, que consiste em moléculas caracterizadas pela repetição de um 
+                  ou mais tipos de monômeros (ABNT, 2008), não são renováveis, feito de uma resina chamada Polietileno de Baixa Densidade 
+                  (PEBD) e são produzidos através de um processo químico chamado polimerização.</p>
+              </div>
+                  <ul class="list-group list-group-flsuh">
+                      <li class="list-group-item"><strong>Quais os problemas causados pelo plástico?</strong><br>
+                      Os plásticos afetam o nosso planeta de várias maneiras. Um dos principais problemas é o de geralmente serem queimados 
+                      ao ar livre, o que leva à poluição do ar. Além disso, quando os animais ou os seres humanos inalam o ar contaminado, 
+                      isso pode afetar o seu bem-estar geral e causar distúrbios respiratórios.Quando descartado de forma incorreta, o lixo 
+                      plástico pode causar entupimentos de valas e bueiros, que geram enchentes e desabrigam pessoas, principalmente os 
+                      moradores de periferias. A poluição visual também é outro malefício causado pelos resíduos plásticos. Isso sem contar 
+                      o impacto dos plásticos no ecossistema marinho</li>
+                      <li class="list-group-item"><strong>É possível reduzir o uso de plástico em nossa sociedade?</strong><br>
+                      Uma boa maneira de ajudar a diminuir esse problema é levar uma garrafinha reutilizável com água na sua bolsa ou mochila. 
+                      Dessa forma, você pode garantir o consumo de água recomendado sem comprometer o meio ambiente. O aparentemente inofensivo 
+                      canudinho de plástico pode gerar diversos problemas ambientais</li>
+                      <li class="list-group-item"><strong>Como resolver este problema?</strong><br>
+                      Os problemas ocasionados pelos resíduos sólidos é um assunto de interesse mundial. Entre eles destaca-se o plástico, 
+                      podemos observar que a sociedade vem a cada dia tentando reduzir a quantidade de embalagens descartadas em aterros 
+                      sanitários e em outros locais impróprios a este fim.
+                      Algumas pesquisas foram desenvolvidas para tentar resolver os problemas causados pelo descarte inadequado do plástico. 
+                      As alternativas para resolver este tipo de problema e valorizar o uso do plástico estão tanto  na recuperação do material 
+                      por meio da reciclagem mecânica, química, biológica ou orgânica, quanto na recuperação energética.
+                       </li>
+                  </ul>
+                  
+                    <div class="card-body text-center">
+                 <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal-2">Saiba mais</a>
+                  
+              </div>
+              <div class="card-footer text-muted">
+           Plástico o Vilão.com
+              </div>
+              
+              </div>
+          
+          </div>
+          
+      </div>
+        </div>
+      
+      <div class="jumbotron jumbotron-fluid">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-12 text-center">
+                         
+                         <h1 class="display-6"><i class="fa fa-envira" aria-hidden="true"style='font-size:50px;color:cadetblue'></i>
+                            <strong>CONTINUE LUTANDO POR ESSA CAUSA</strong></h1>
+                         <p class="lead"><strong>Venha fazer parte desse time</strong></p>
+                         <hr>
+                     
+                     </div>
+                 
+                 </div>
+                 
+                 <div class="row">
+                     <div class="col-12">
+                         <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist">
+                         
+                         <li class="nav-item">
+                             <a class="nav-link active" id="nav-pills-01" data-toggle="pill" href="#nav-item-01">Sustente essa ideia </a>
+                             
+                             </li>
+                         
+                        <li class="nav-item">
+
+                             <a class="nav-link" id="nav-pills-01" data-toggle="pill" href="#nav-item-02">Danos causado pelo plástico </a>
+                             
+                             </li>
+                         <li class="nav-item">
+
+                             <a class="nav-link" id="nav-pills-01" data-toggle="pill" href="#nav-item-03">Aprendendo se divertindo </a>
+                             
+                             </li>
+                         </ul>
+                         <div class="tab-content" id="nav-pills-content">
+                             
+                         <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+                             
+                             <div class="row">
+                             
+                                 <div class="col-sm-6">
+                                   <i class="fa fa-youtube-play" aria-hidden="true"style='font-size:50px;color: #ff0000'>
+                                   </i><div class="embed-responsive embed-responsive-16by9">
+                                   <iframe class="embed-responsive-item" src="videos/video-1.mp4"></iframe>  
+                                     
+                                
+                                 
+                                     
+                                 </div>
+                             
+                                 <div class="col-sm-6">
+                                 
+                                     </div>
+                                 </div>
+                                 
+                             </div>
+                             
+                             </div>
+                             
+                             <div class="tab-pane fade" id="nav-item-02" role="tabpanel">
+                        <div class="row">
+                             
+                                <div class="col-sm-6">
+                                  <i class="fa fa-youtube-play" aria-hidden="true"style='font-size:50px;color: #ff0000'></i>
+                                   <div class="embed-responsive embed-responsive-16by9">
+                                   <iframe class="embed-responsive-item" src="videos/video-2.mp4"></iframe>
+                                </div>
+                             
+                                 <div class="col-sm-6">
+                                 <p></p>
+                                     </div>
+                                 </div>
+                                 
+                             </div>
+                             
+                             
+                             </div>
+                             
+                             <div class="tab-pane fade" id="nav-item-03" role="tabpanel">
+                             <div class="row">
+                             
+                                 <div class="col-sm-6">
+                                 <i class="fa fa-youtube-play" aria-hidden="true"style='font-size:50px;color: #ff0000'>
+                                 </i> <div class="embed-responsive embed-responsive-16by9">
+                                   <iframe class="embed-responsive-item" src="videos/video-3.mp4"></iframe>  
+                                     
+                              <div class="col-sm-6">
+                                 <p></p>
+                                     </div>
+                             </div>
+                         </div>
+                     
+                     </div>
+                 
+                 </div>
+             
+             </div>
+         
+         <div class="row">
+             
+         <div class="col-12 mb-3"><hr></div>
+             
+             <div class="col-sm-4">
+             
+             <h3>Sustentável</h3>
+             
+            <p>Como todo site de sustentabilidade, o intuito é promover o conhecimento levando para cada leitor uma 
+            experiência única, fazendo com que as informações aqui fornecidas causem um efeito positivo não só em 
+            pensamentos a serem refletidos, mais sim em atitudes para serem colocada em práticas.</p>
+                 
+         </div>
+             
+                                      
+         <div class="col-sm-4">
+                                
+             <h3>Menu</h3>
+             
+            <div class="list-group text-center">
+                  
+             <a href="./ENERGIA%20RENOV%C3%81VEL.html" class="list-group-item list-group-item-action list-group-item-success">Energia Renovável</a>
+             <a href="./MEIO%20AMBIENTE.html" class="list-group-item list-group-item-action list-group-item-info">Meio Ambiente</a>
+             <a href="./ATITUDE.html" class="list-group-item list-group-item-action list-group-item-warning">Atitude</a>
+             <a href="./CADASTRO.html" class="list-group-item list-group-item-action list-group-item-danger">Cadastro</a>
+                
+            </div>
+            </div>
+             
+            <div class="col-sm-4">
+                 
+             <h3>Social</h3>
+             
+            <div class="btn-group-vertical btn-block btn-group-lg" role="group">
+             
+                <a class="btn btn-outline-primary" href="https://www.linkedin.com/in/juliana-de-maula"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+                <a class="btn btn-outline-dark" href="https://github.com/julianamaula"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+                <a class="btn btn-outline-info" href="https://cursos.alura.com.br/user/julianademaula"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Alura</a>
+                <a class="btn btn-outline-success" href="https://www.dio.me/en/users/jdemaula"><i class="fa fa-users" aria-hidden="true"></i> Dio.me</a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+             
+            </div>
+             
+           </div>
+                         </div>
+                     </div>
+             
+             
+             <div class="col-mt-5">
+                 <br><br><br>
+             <blockquote class="blockquote text-center">
+                 
+             <p class="mb-0"><i class="fa fa-quote-left" aria-hidden="true"></i> A base de toda a sustentabilidade 
+             é o desenvolvimento humano que deve contemplar um melhor relacionamento do homem com os semelhantes e 
+             a natureza.<i class="fa fa-quote-right" aria-hidden="true"></i> </p> 
+                 <footer class="blockquote-footer"> Nagib Anderáos Neto <cite title="Source Titulo"> https://www.pensador.com/ 
+                 </cite><br><br><br> Site Sustentabilidade Copyright © 2022 </footer>
+                 <footer class="blockquote-footer">Todos os direitos reservados. Juliana de Maula</footer>
+             </blockquote>
+             
+             
+             
+             
+             </div>
+         </div>                            
+                                      
+        </div>
+          </div>
+      
+              
+      <!-- MODAL -->
+     <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+              
+              <div class="modal-header">
+                  <h5 class="modal-title">SABIA QUE EXISTE A COLETA INTELIGENTE</h5>
+                  <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                  </button>
+              
+              </div>
+          <div class="modal-body">
+              <p>Em poucas palavras, significa que o gerador do lixo deve separar os seus dejetos 
+              para que o coletor faça o manejo adequado. Lembrando que de acordo com a Política Nacional 
+              de Resíduos Sólidos, é obrigação de todo município implementar a coleta de resíduos seletiva 
+              e ter metas sobre a área no seu plano de gestão </p>
+              
+              <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+              </div>
+              
+              </div>
+          </div>
+          
+      
+      </div>
+         
+        </div> 
+              
+        
+        <div class="modal fade" id="siteModal-1" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+              
+              <div class="modal-header">
+                  <h5 class="modal-title">SABIA QUE EXISTE A ENERGIA MAIS LIMPA DO MUNDO</h5>
+                  <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                  </button>
+              
+              </div>
+          <div class="modal-body">
+              <p>A Energia Solar é Limpa, Sustentável, Alternativa e Renovável. A energia solar possui 
+              a vantagem de ser uma energia limpa, sustentável, alternativa e renovável, além de possuir 
+              uma fonte de energia gratuita e trazer economia para seus consumidores.</p>
+              
+              <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+              </div>
+              
+              </div>
+          </div>
+          
+      
+      </div>
+         
+        </div> 
+              
+        
+        <div class="modal fade" id="siteModal-2" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+              
+              <div class="modal-header">
+                  <h5 class="modal-title">SABIA QUE ATÉ OS PLÁSTICO BIODEGRADÁVEL TAMBÉM TEM SUAS DESVANTAGENS</h5>
+                  <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                  </button>
+              
+              </div>
+          <div class="modal-body">
+              <p>Porém, se por um lado eles contribuem para a redução de resíduos sólidos por outro os produtos 
+               biodegradáveis contribuem para o efeito estufa, pois, ao se degradarem eles liberam gás metano proporcional 
+               a velocidade de degradação, ou seja, quanto mais rápido o produto se decompõe mais gás ele libera no ar </p>
+              
+              <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+              </div>
+              
+              </div>
+          </div>
+          
+      
+      </div>
+         
+        </div> 
+       
+      
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+       <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+
+     <!-- Inclua o arquivo JavaScript separado -->
+    <script src="js/redesSociais.js"></script>
+
+</body>
+</html>
