@@ -1,0 +1,26 @@
+- Title: Aprendendo se divertindo
+  URL: https://www.youtube.com/embed/18NoW5UTstk
+  Description: Vídeo sobre como aprender de forma divertida.
+  Product: Projects
+  Versions: fpt, GHES > 3.2
+  Date added: 2023-10-01
+  Location: /docs/learning
+  Transcript: ./content/video-transcripts/aprendendo-se-divertindo.txt
+
+- Title: Outro Vídeo
+  URL: https://www.youtube.com/embed/dCOOWSbe6Ig
+  Description: Vídeo sobre outro tópico interessante.
+  Product: Projects
+  Versions: fpt, GHES > 3.2
+  Date added: 2023-10-01
+  Location: /docs/another-topic
+  Transcript: ./content/video-transcripts/outro-video.txt
+
+- Title: Vídeo no Dailymotion
+  URL: https://www.dailymotion.com/embed/video/x3zefbo
+  Description: Vídeo hospedado no Dailymotion.
+  Product: Projects
+  Versions: fpt, GHES > 3.2
+  Date added: 2023-10-01
+  Location: /docs/dailymotion
+  Transcript: ./content/video-transcripts/dailymotion-video.txt
