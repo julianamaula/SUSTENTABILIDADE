@@ -4,9 +4,14 @@ overflow: auto;
 height: 300px;
 }
 
-.jumbotron-fluid {
-padding-right: 0;
-padding-left: 0;
-border-radius: 0;
+/* Estilo personalizado para o nav-link */
+.custom-nav-link {
+    color: white !important; /* Cor branca por padrão */
+    transition: color 0.3s ease; /* Transição suave para o efeito de hover */
 }
+
+.custom-nav-link:hover {
+    color: #15d495 !important; /* Cor ao passar o mouse (amarelo, por exemplo) */
+}
+
 

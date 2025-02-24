@@ -8,10 +8,14 @@ line-height: 1.5;
 
 }
 
-.nav-item{
-font-size: 16px;
-font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-line-height: 1.5;
+/* Estilo personalizado para o nav-link */
+.custom-nav-link {
+    color: white !important; /* Cor branca por padrão */
+    transition: color 0.3s ease; /* Transição suave para o efeito de hover */
+}
+
+.custom-nav-link:hover {
+    color: #15d495 !important; /* Cor ao passar o mouse (amarelo, por exemplo) */
 }
 
 .titulo_item1{
@@ -50,11 +54,5 @@ padding-left: 30px;
 padding-right: 30px;    
 padding-top: 50px;
 padding-bottom: 50px;    
-}
-.jumbotron-fluid {
-padding-right: 0;
-padding-left: 0;
-border-radius: 0;
-
 }
 
