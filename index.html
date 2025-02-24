@@ -457,7 +457,7 @@
                  
                  </div>
                  
-               <div class="container">
+ <div class="container">
         <!-- Tabs de Navegação -->
         <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist">
             <li class="nav-item">
@@ -481,8 +481,11 @@
                         <img src="imgs/thumb-1.jpg" alt="Thumbnail 1" class="video-thumbnail" onclick="loadVideo('video-1')">
                         <!-- Ícone do YouTube -->
                         <i class="fa fa-youtube-play youtube-icon" aria-hidden="true" onclick="loadVideo('video-1')"></i>
-                        <!-- Iframe do vídeo -->
-                        <iframe id="video-1" class="video-iframe" data-src="videos/video-1.mp4" allowfullscreen></iframe>
+                        <!-- Tag de vídeo -->
+                        <video id="video-1" class="video-player" controls>
+                            <source src="videos/video-1.mp4" type="video/mp4">
+                            Seu navegador não suporta o elemento de vídeo.
+                        </video>
                     </div>
                 </div>
             </div>
@@ -495,8 +498,11 @@
                         <img src="imgs/thumb-2.jpg" alt="Thumbnail 2" class="video-thumbnail" onclick="loadVideo('video-2')">
                         <!-- Ícone do YouTube -->
                         <i class="fa fa-youtube-play youtube-icon" aria-hidden="true" onclick="loadVideo('video-2')"></i>
-                        <!-- Iframe do vídeo -->
-                        <iframe id="video-2" class="video-iframe" data-src="videos/video-2.mp4" allowfullscreen></iframe>
+                        <!-- Tag de vídeo -->
+                        <video id="video-2" class="video-player" controls>
+                            <source src="videos/video-2.mp4" type="video/mp4">
+                            Seu navegador não suporta o elemento de vídeo.
+                        </video>
                     </div>
                 </div>
             </div>
@@ -509,22 +515,28 @@
                         <img src="imgs/thumb-3.jpg" alt="Thumbnail 3" class="video-thumbnail" onclick="loadVideo('video-3')">
                         <!-- Ícone do YouTube -->
                         <i class="fa fa-youtube-play youtube-icon" aria-hidden="true" onclick="loadVideo('video-3')"></i>
-                        <!-- Iframe do vídeo -->
-                        <iframe id="video-3" class="video-iframe" data-src="videos/video-3.mp4" allowfullscreen></iframe>
+                        <!-- Tag de vídeo -->
+                        <video id="video-3" class="video-player" controls>
+                            <source src="videos/video-3.mp4" type="video/mp4">
+                            Seu navegador não suporta o elemento de vídeo.
+                        </video>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-             <!-- Script para carregar vídeos ao clicar no ícone ou na thumbnail -->
+
+            <!-- Script para carregar vídeos ao clicar no ícone ou na thumbnail -->
     <script>
         function loadVideo(videoId) {
-            const iframe = document.getElementById(videoId);
-            const thumbnail = iframe.previousElementSibling.previousElementSibling; // Thumbnail
-            const icon = iframe.previousElementSibling; // Ícone do YouTube
+            const video = document.getElementById(videoId);
+            const thumbnail = video.previousElementSibling.previousElementSibling; // Thumbnail
+            const icon = video.previousElementSibling; // Ícone do YouTube
 
-            if (iframe && !iframe.src) {
-                iframe.src = iframe.getAttribute('data-src'); // Carrega o vídeo
-                iframe.style.display = 'block'; // Exibe o iframe
+            if (video) {
+                video.style.display = 'block'; // Exibe o vídeo
+                video.play(); // Inicia o vídeo
                 thumbnail.style.display = 'none'; // Oculta a thumbnail
                 icon.style.display = 'none'; // Oculta o ícone
             }
