@@ -457,21 +457,7 @@
                  
                  </div>
                  
- <div class="container">
-        <!-- Tabs de Navegação -->
-        <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" id="nav-pills-01" data-toggle="pill" href="#nav-item-01">Sustente essa ideia</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="nav-pills-02" data-toggle="pill" href="#nav-item-02">Danos causados pelo plástico</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="nav-pills-03" data-toggle="pill" href="#nav-item-03">Aprendendo se divertindo</a>
-            </li>
-        </ul>
-
-        <div class="container">
+<div class="container">
         <!-- Tabs de Navegação -->
         <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist">
             <li class="nav-item">
@@ -496,9 +482,14 @@
                         <video id="video-1" class="video-player" controls onerror="videoError('video-1')">
                             <source src="videos/video-1.mp4" type="video/mp4">
                             Seu navegador não suporta o elemento de vídeo.
-
-
-                            <script>
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <!-- Repita para as outras tabs -->
+        </div>
+    </div>
+                  <script>
         function loadVideo(videoId) {
             const video = document.getElementById(videoId);
             const thumbnail = video.previousElementSibling.previousElementSibling;
@@ -518,13 +509,6 @@
             console.error(`Erro ao carregar o vídeo ${videoId}. Verifique o caminho e o formato do arquivo.`);
         }
     </script>
-                        </video>
-                    </div>
-                </div>
-            </div>
-            <!-- Repita para as outras tabs -->
-        </div>
-    </div>
    
          
          <div class="row">
