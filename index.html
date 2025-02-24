@@ -15,7 +15,7 @@
     <!-- Font Awesome para ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-      
+     
     </head>
     <body>
         
@@ -477,36 +477,57 @@
             <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
                 <div class="row">
                     <div class="col-12 video-wrapper">
+                        <!-- Thumbnail do vídeo -->
                         <img src="imgs/thumb-1.jpg" alt="Thumbnail 1" class="video-thumbnail" onclick="loadVideo('video-1')">
+                        <!-- Ícone do YouTube -->
                         <i class="fa fa-youtube-play youtube-icon" aria-hidden="true" onclick="loadVideo('video-1')"></i>
-                        <video id="video-1" class="video-player" controls onerror="videoError('video-1')">
-                            <source src="videos/video-1.mp4" type="video/mp4">
-                            Seu navegador não suporta o elemento de vídeo.
-                        </video>
+                        <!-- Iframe do vídeo -->
+                        <iframe id="video-1" class="video-iframe" data-src=""C:\Users\JM\Dropbox\Envio da câmera\video-2.mp4"" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
-            <!-- Repita para as outras tabs -->
+
+            <!-- Tab 2 -->
+            <div class="tab-pane fade" id="nav-item-02" role="tabpanel">
+                <div class="row">
+                    <div class="col-12 video-wrapper">
+                        <!-- Thumbnail do vídeo -->
+                        <img src="imgs/thumb-2.jpg" alt="Thumbnail 2" class="video-thumbnail" onclick="loadVideo('video-2')">
+                        <!-- Ícone do YouTube -->
+                        <i class="fa fa-youtube-play youtube-icon" aria-hidden="true" onclick="loadVideo('video-2')"></i>
+                        <!-- Iframe do vídeo -->
+                        <iframe id="video-2" class="video-iframe" data-src="videos/video-2.mp4" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 3 -->
+            <div class="tab-pane fade" id="nav-item-03" role="tabpanel">
+                <div class="row">
+                    <div class="col-12 video-wrapper">
+                        <!-- Thumbnail do vídeo -->
+                        <img src="imgs/thumb-3.jpg" alt="Thumbnail 3" class="video-thumbnail" onclick="loadVideo('video-3')">
+                        <!-- Ícone do YouTube -->
+                        <i class="fa fa-youtube-play youtube-icon" aria-hidden="true" onclick="loadVideo('video-3')"></i>
+                        <!-- Iframe do vídeo -->
+                        <iframe id="video-3" class="video-iframe" data-src="https://www.dropbox.com/scl/fi/94g7oyzgr5tbq3fa5mb88/video-3.mp4?rlkey=wm0foon5f5drznq8swkahrizm&dl=0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-                  <script>
+<script>
         function loadVideo(videoId) {
-            const video = document.getElementById(videoId);
-            const thumbnail = video.previousElementSibling.previousElementSibling;
-            const icon = video.previousElementSibling;
+            const iframe = document.getElementById(videoId);
+            const thumbnail = iframe.previousElementSibling.previousElementSibling; // Thumbnail
+            const icon = iframe.previousElementSibling; // Ícone do YouTube
 
-            if (video) {
-                video.style.display = 'block';
-                video.play().catch(error => {
-                    console.error("Erro ao reproduzir o vídeo:", error);
-                });
-                thumbnail.style.display = 'none';
-                icon.style.display = 'none';
+            if (iframe && !iframe.src) {
+                iframe.src = iframe.getAttribute('data-src'); // Carrega o vídeo
+                iframe.style.display = 'block'; // Exibe o iframe
+                thumbnail.style.display = 'none'; // Oculta a thumbnail
+                icon.style.display = 'none'; // Oculta o ícone
             }
-        }
-
-        function videoError(videoId) {
-            console.error(`Erro ao carregar o vídeo ${videoId}. Verifique o caminho e o formato do arquivo.`);
         }
     </script>
    
