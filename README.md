@@ -56,3 +56,25 @@ Aqui está um vídeo sobre como aprender de forma divertida:
 - **Data de adição**: 2023-10-01
 - **Localização**: /docs/learning
 - **Transcrição**: [Ver transcrição](./content/video-transcripts/aprendendo-se-divertindo.txt)
+
+
+# Repositório de Vídeos
+
+Este repositório contém metadados de vídeos incorporados na documentação.
+
+## Estrutura do Repositório
+
+- `.github/workflows/main.yml`: Fluxo de trabalho para validar metadados de vídeos.
+- `docs/metadata/videos.yml`: Arquivo YAML com os metadados dos vídeos.
+- `css/`: Pasta com arquivos CSS.
+
+## Como Adicionar um Novo Vídeo
+
+1. Edite o arquivo `docs/metadata/videos.yml`.
+2. Adicione os metadados do novo vídeo no formato YAML.
+3. Faça commit e push das alterações.
+4. O fluxo de trabalho será acionado automaticamente para validar o arquivo YAML.
+
+## Fluxo de Trabalho
+
+O fluxo de trabalho valida o arquivo `videos.yml` e garante que ele esteja no formato correto.
