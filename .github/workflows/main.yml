@@ -17,7 +17,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Passo 2: Validar o arquivo YAML de metadados
+      # Passo 2: Configurar Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      # Passo 3: Instalar dependências (js-yaml)
+      - name: Instalar js-yaml
+        run: npm install js-yaml
+
+      # Passo 4: Validar o arquivo YAML de metadados
       - name: Validar YAML
         uses: actions/github-script@v6
         with:
@@ -37,7 +47,7 @@ jobs:
               process.exit(1); // Falha no fluxo de trabalho
             }
 
-      # Passo 3: Executar um script personalizado (opcional)
+      # Passo 5: Executar um script personalizado (opcional)
       - name: Executar script personalizado
         run: |
           echo "Processando metadados de vídeos..."
