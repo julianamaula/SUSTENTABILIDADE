@@ -34,29 +34,34 @@ line-height: 1.5;
 font-size: 20px;
 
 }
-
+/* Estilo para centralizar o vídeo */
 .video-wrapper {
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-margin-bottom: 20px;
+margin-bottom: 20px; /* Espaçamento entre os vídeos */
 }
+
+/* Estilo para o ícone do YouTube */
 .youtube-icon {
 font-size: 50px;
 color: #ff0000;
-margin-bottom: 10px;
-cursor: pointer;
+margin-bottom: 10px; /* Espaçamento entre o ícone e o vídeo */
+cursor: pointer; /* Cursor de clique */
 }
-.video-player {
-display: none;
+
+/* Estilo para o iframe do vídeo */
+.video-iframe {
+display: none; /* Inicialmente oculto */
 width: 100%;
-height: auto;
-max-width: 800px;
+height: 100%;
+border: none;
 }
+
+/* Estilo para a imagem de thumbnail */
 .video-thumbnail {
 width: 100%;
 height: auto;
-cursor: pointer;
-max-width: 800px;
+cursor: pointer; /* Cursor de clique */
 }
