@@ -22,63 +22,77 @@
        
       <title>Sustentável</title>
       
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container">
-            <a class="navbar-brand h1 mb-0" href="index.html"><i class="fa fa-home"></i> HOME</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-primary">
+    <div class="container">
     
-                    <div class="collapse navbar-collapse" id="navbarScroll">
-                
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                     <li class="nav-item">
-                <a class="nav-link" href="./ENERGIA%20RENOV%C3%81VEL.html"><strong>ENERGIA RENOVÁVEL</strong></a>
-              </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="MEIO%20AMBIENTE.html">MEIO AMBIENTE</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="ATITUDE.html">ATITUDE</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="CADASTRO.html">CADASTRO</a>
-                        </li>
-                           </ul>
-          
-                <ul class="navbar-nav ms-auto">
+    <a class="navbar-brand h1 mb-0" href="Index.html"><i class="fa fa-home" aria-hidden="true"></i>HOME</a>
     
-                   <div class="dropdown">
-               <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                    Social
-                </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <a class="dropdown-item" href="https://www.linkedin.com/in/juliana-de-maula" style="color: #0077b5;">LinkedIn</a>
-                <a class="dropdown-item" href="https://github.com/julianamaula" style="color: #333;">Github</a>
-                <a class="dropdown-item" href="https://cursos.alura.com.br/user/julianademaula" style="color: #007bff;">Alura</a>
-                <a class="dropdown-item" href="https://www.dio.me/en/users/jdemaula" style="color: #00c853;">Dio.me</a>
-            </div>
-              </div>
-            </ul>
-            <form class="form-inline d-flex" onsubmit="return searchContent();">
-                <input class="form-control me-2" type="search" placeholder="Buscar..." list="search-items" id="search-input">
-                    <datalist id="search-items">
-                        <option value="APRENDIZADO"></option>
-                        <option value="SUSTENTABILIDADE"></option>
-                        <option value="Consumo Consciente"></option>
-                        <option value="Plástico um perigo de grande proporções"></option>
-                        <option value="AÇÕES QUE PODEM AJUDAR"></option>
-                        <option value="Vantagens ambientais"></option>
-                        <option value="Vantagens Econômicas e Sociais"></option>
-                    </datalist>
-                    
-                    <button class="btn btn-success" type="button" id="search-btn">OK</button>
-                </form>
-                
-                
-                    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+     <span class="navbar-toggler-icon"></span>
+    </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSite">
+            
+    <ul class="navbar-nav mr-auto">
+        
+      <li class="nav-item">
+        <a class="nav-link" href="./ENERGIA%20RENOV%C3%81VEL.html"><strong>ENERGIA RENOVÁVEL</strong></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./MEIO%20AMBIENTE.html"><strong>MEIO AMBIENTE</strong></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./ATITUDE.html"><strong>ATITUDE</strong></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./CADASTRO.html"><strong>CADASTRO</strong></a>
+    </li>
+             </ul>
+            
+            <ul class="navbar-nav ml-auto">
+           
+         <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Social
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <a class="dropdown-item" href="https://www.linkedin.com/in/juliana-de-maula" style="color: #0077b5;">LinkedIn</a>
+    <a class="dropdown-item" href="https://github.com/julianamaula" style="color: #333;">Github</a>
+    <a class="dropdown-item" href="https://cursos.alura.com.br/user/julianademaula" style="color: #007bff;">Alura</a>
+    <a class="dropdown-item" href="https://www.dio.me/en/users/jdemaula" style="color: #00c853;">Dio.me</a>
+</div>
                 </div>
-            </nav>
+            </ul>
+            <form class="form-inline" action="#">
+              <input class="form-control ml-4 mr-2" type="search" placeholder="Buscar..." list="search-items" id="search-input">
+              <datalist id="search-items">
+                  <option value="APRENDIZADO" data-target="#item1">
+                  <option value="SUSTENTABILIDADE" data-target="#item2">
+                  <option value="Consumo Consciente" data-target="#item2-1"></option>
+                  <option value="Plástico um perigo de grande proporções" data-target="#item2-2"></option>
+                  <option value="AÇÕES QUE PODEM AJUDAR" data-target="#item3"></option>
+                  <option value="Vantagens ambientais" data-target="#item3-1">
+                  <option value="Vantagens Econômicas e Sociais" data-target="#item3-2"></option>
+              </datalist>
+              <button class="btn btn-success" type="button" onclick="searchContent()">ok</button>
+          </form>
+          <script>
+            function searchContent() {
+                const searchInput = document.getElementById('search-input').value;
+                const options = document.querySelectorAll('#search-items option');
+                options.forEach(option => {
+                    if (option.value === searchInput) {
+                        const target = option.getAttribute('data-target');
+                        if (target) {
+                            document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }
+                });
+            }
+        </script>
+    </div>
+</div>
+  </nav>
             <br><br>
               
               
