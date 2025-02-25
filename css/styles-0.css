@@ -34,8 +34,9 @@ line-height: 1.5;
 font-size: 20px;
 }
 
-.fa-play-circle, .fa-youtube-play {
+.fa-youtube-play {
 margin-bottom: 10px;
+justify-content: center;
 }
 .nav-pills .nav-link {
 color: #333;
@@ -54,5 +55,9 @@ margin-bottom: 20px;
 font-size: 16px;
 color: #555;
 margin-top: 10px;
+}
+.tab-pane{
+justify-content: center;
+  
 }
 
