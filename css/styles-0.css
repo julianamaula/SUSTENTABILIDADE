@@ -51,13 +51,13 @@ background-color: #007bff;
 .embed-responsive {
 margin-bottom: 20px;
 }
-.col-sm-6 p {
-font-size: 16px;
-color: #555;
-margin-top: 10px;
-}
+
 .tab-pane{
 justify-content: center;
   
 }
-
+.card-text{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+line-height: 1.5;
+font-size: 20px;
+}
