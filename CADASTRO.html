@@ -199,8 +199,8 @@
                     
                     <div class="form-group col-sm-12">
                   
-              <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
-  Tooltip with HTML
+              <button type="button" class="btn btn-success" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+  Enviar 
 </button>
                         
             <a tabindex="0" class="btn btn-secondary ml-2" role="button" data-toggle="tooltip" 
@@ -309,8 +309,12 @@
         </blockquote>
         
         <script>
+    $(document).ready(function() {
+    // ...
     $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="tooltip"]').tooltip()
+    }) // function()
+    // ...
 })
 </script>
 
