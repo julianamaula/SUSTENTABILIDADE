@@ -199,9 +199,11 @@
                     
                     <div class="form-group col-sm-12">
                   
-              <button type="submit" class="btn btn-primary"  style="color: black">Enviar</button>
+              <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+  Tooltip with HTML
+</button>
                         
-            <a tabindex="0" class="btn btn-secondary ml-2" role="button" data-toggle="popover" 
+            <a tabindex="0" class="btn btn-secondary ml-2" role="button" data-toggle="tooltip" 
               data-placement="right" data-trigger="focus" 
               title="E-mail cadastrado com sucesso" 
               data-content="Parabéns por fazer parte dessa corrente do bem!!!" 
@@ -307,9 +309,9 @@
         </blockquote>
         
         <script>
-    $(function(){
-        $('[data-toggle="popover"]').popover();
-    });
+    $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 </script>
 
         
