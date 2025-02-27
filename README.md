@@ -6,7 +6,7 @@
 Aqui está outro vídeo Sustente essa ideia:
 
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fsCFrB-9eSc"></iframe>
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fsCFrB-9eSc"> </iframe>
 </div>
 
 ### Metadados:
@@ -26,7 +26,7 @@ Aqui está outro vídeo Sustente essa ideia:
 Aqui está um vídeo Danos causados pelo plástico:
 
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-UmOPQRpRIE?list=PLZhF4yL4K1mtM7OnLnmCUaYuEpO8NezXS"></iframe>
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-UmOPQRpRIE?list=PLZhF4yL4K1mtM7OnLnmCUaYuEpO8NezXS"> </iframe>
 </div>
 
 ### Metadados:
@@ -44,7 +44,7 @@ Aqui está um vídeo Danos causados pelo plástico:
 Aqui está um vídeo sobre como aprender de forma divertida:
 
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dCOOWSbe6Ig"></iframe>
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dCOOWSbe6Ig"> </iframe>
 </div>
 
 ### Metadados:
