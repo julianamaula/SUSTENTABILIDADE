@@ -1,61 +1,61 @@
 # Vídeos Incorporados
 
 
-## 1. Outro Vídeo
+## 1. Sustente essa ideia
 
-Aqui está outro vídeo interessante:
+Aqui está outro vídeo Sustente essa ideia:
 
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dCOOWSbe6Ig"></iframe>
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fsCFrB-9eSc"></iframe>
 </div>
 
 ### Metadados:
-- **Título**: Outro Vídeo
-- **URL**: [https://www.youtube.com/embed/dCOOWSbe6Ig](https://www.youtube.com/embed/dCOOWSbe6Ig)
-- **Descrição**: Vídeo sobre outro tópico interessante.
+- **Título**: Sustente essa ideia
+- **URL**: [https://www.youtube.com/embed/dCOOWSbe6Ig](https://youtu.be/fsCFrB-9eSc)
+- **Descrição**: Vídeo sobre Sustente essa ideia.
 - **Produto**: Projects
 - **Versões**: fpt, GHES > 3.2
 - **Data de adição**: 2023-10-01
-- **Localização**: /docs/another-topic
-- **Transcrição**: [Ver transcrição](./content/video-transcripts/outro-video.txt)
+- **Localização**: 
+- **Transcrição**: 
 
 ---
 
-## 2. Vídeo no Dailymotion
+## 2. Danos causados pelo plástico
 
-Aqui está um vídeo hospedado no Dailymotion:
+Aqui está um vídeo Danos causados pelo plástico:
 
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.dailymotion.com/embed/video/x3zefbo"></iframe>
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-UmOPQRpRIE?list=PLZhF4yL4K1mtM7OnLnmCUaYuEpO8NezXS"></iframe>
 </div>
 
 ### Metadados:
-- **Título**: Vídeo no Dailymotion
-- **URL**: [https://www.dailymotion.com/embed/video/x3zefbo](https://www.dailymotion.com/embed/video/x3zefbo)
+- **Título**: Danos causados pelo plástico
+- **URL**: [https://www.youtube.com/watch?v=-UmOPQRpRIE](https://youtu.be/-UmOPQRpRIE)
 - **Descrição**: Vídeo hospedado no Dailymotion.
 - **Produto**: Projects
 - **Versões**: fpt, GHES > 3.2
 - **Data de adição**: 2023-10-01
-- **Localização**: /docs/dailymotion
-- **Transcrição**: [Ver transcrição](./content/video-transcripts/dailymotion-video.txt)
+- **Localização**:
+- **Transcrição**:
 
 ## 3. Aprendendo se divertindo
 
 Aqui está um vídeo sobre como aprender de forma divertida:
 
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/18NoW5UTstk"></iframe>
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dCOOWSbe6Ig"></iframe>
 </div>
 
 ### Metadados:
 - **Título**: Aprendendo se divertindo
-- **URL**: [https://www.youtube.com/embed/18NoW5UTstk](https://www.youtube.com/embed/18NoW5UTstk)
+- **URL**: [https://www.youtube.com/watch?v=dCOOWSbe6Ig](https://youtu.be/dCOOWSbe6Ig)
 - **Descrição**: Vídeo sobre como aprender de forma divertida.
 - **Produto**: Projects
 - **Versões**: fpt, GHES > 3.2
 - **Data de adição**: 2023-10-01
-- **Localização**: /docs/learning
-- **Transcrição**: [Ver transcrição](./content/video-transcripts/aprendendo-se-divertindo.txt)
+- **Localização**: 
+- **Transcrição**:
 
 
 # Repositório de Vídeos
