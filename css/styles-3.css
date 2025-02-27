@@ -10,7 +10,7 @@ line-height: 1.5;
   
 
 .navbar{
-font-size: 20px;
+
 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 line-height: 1.5;
 background-color: rgba(11, 114, 239, 0.857);
@@ -55,4 +55,20 @@ padding-bottom: 50px;
 
 .jumbotron-fluid{
   color: black;  
+}
+
+/* Estilo para centralizar o vídeo */
+.video-wrapper {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin-bottom: 20px; /* Espaçamento entre os vídeos */
+}
+
+/* Estilo para o ícone do YouTube */
+.youtube-icon {
+font-size: 50px;
+color: #ff0000;
+margin-bottom: 10px; /* Espaçamento entre o ícone e o vídeo */
 }
