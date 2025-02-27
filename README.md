@@ -32,7 +32,7 @@ Aqui está um vídeo Danos causados pelo plástico:
 ### Metadados:
 - **Título**: Danos causados pelo plástico
 - **URL**: [https://www.youtube.com/watch?v=-UmOPQRpRIE](https://youtu.be/-UmOPQRpRIE)
-- **Descrição**: Vídeo hospedado no Dailymotion.
+- **Descrição**:  Vídeo sobre Danos causados pelo plástico.
 - **Produto**: Projects
 - **Versões**: fpt, GHES > 3.2
 - **Data de adição**: 2023-10-01
@@ -56,6 +56,25 @@ Aqui está um vídeo sobre como aprender de forma divertida:
 - **Data de adição**: 2023-10-01
 - **Localização**: 
 - **Transcrição**:
+
+  ## 4. Reciclar
+
+Aqui está um vídeo Danos causados pelo plástico:
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6G6f2stDCN0" > </iframe>
+</div>
+
+### Metadados:
+- **Título**: Reciclar
+- **URL**: [https://www.youtube.com/watch?v=34FtUCjdIBM](https://youtu.be/6G6f2stDCN0)
+- **Descrição**: Vídeo sobre Reciclar
+- **Produto**: Projects
+- **Versões**: fpt, GHES > 3.2
+- **Data de adição**: 2023-10-01
+- **Localização**:
+- **Transcrição**:
+
 
 
 # Repositório de Vídeos
